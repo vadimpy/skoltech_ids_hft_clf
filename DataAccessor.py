@@ -6,7 +6,7 @@ class DataAccessor:
         self.id = self.df['id']
         self.last_price = self.df['last_price']
         self.mid = self.df['mid']
-        self.opened_position_qty = self.df['opened_position_qty ']
+        self.opened_position_qty = self.df['opened_position_qty']
         self.closed_position_qty = self.df['closed_position_qty']
         self.transacted_qty = self.df['transacted_qty']
         self.d_open_interest = self.df['d_open_interest']
@@ -26,5 +26,3 @@ class DataAccessor:
         self.askvol = []
         self.askvol.extend([self.df['ask1vol'], self.df['ask2vol'], 
                          self.df['ask3vol'], self.df['ask4vol'], self.df['ask5vol']])
-        
-        self.y = self.df['y']
